@@ -5,71 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Games | SparkCart</title>
 <meta name="description" content="Play Aura Deck, Spark Gauntlet and Phase Runner free in your browser.">
+<meta name="copyright" content="© 2026 SparkCart. All rights reserved.">
+<link rel="preload" href="fonts/unbounded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header>
-  <a class="logo" href="index.html" aria-label="SparkCart home">Spark<span>Cart</span></a>
-  <nav aria-label="Main"><a href="index.html">Home</a><a href="games.html" aria-current="page">Games</a><a href="tiktok.html">TikTok App Info</a></nav>
-</header>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="SparkCart home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l3.4 9.2L28.6 14l-9.2 3.4L16 30l-3.4-12.6L3.4 14l9.2-2.8z" fill="#25d5f0" stroke="#12152b" stroke-width="2.2" stroke-linejoin="round"/></svg><span>SparkCart</span></a>
+  <nav class="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="games.html" aria-current="page">Games</a><a href="tiktok.html">TikTok App Info</a></nav>
+</div></header>
 <main id="main">
 
-<h1>Games</h1>
-<p class="lead">Free to play in your browser. Pick a game and press Play. If a game feels cramped, use Open in new tab for the full screen.</p>
-<div class="grid">
-<article class="card" id="aura-deck">
-  <span class="tag">Skateboard clicker</span>
-  <h3>Aura Deck</h3>
-  <p>Tap the board, pull off tricks and build up your aura. Has a touch-friendly phone version and a keyboard and fullscreen PC version.</p>
-  <div class="actions"><button class="btn" type="button" data-game="aura-deck" data-url="https://radicus-boyer.github.io/aura-deck/" data-name="Aura Deck">Play here</button>
-  <a class="btn alt" href="https://radicus-boyer.github.io/aura-deck/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Aura Deck in a new tab)</span></a></div>
+<div class="wrap">
+<div class="page-head"><h1>Games</h1><p>Every game is free and runs in your browser. Press Play to start one right here, or open it in its own tab for the full screen.</p></div>
+<article class="game" id="aura-deck">
+  <div class="cartwrap" style="--r:-5deg"><svg viewBox="0 0 240 290" role="img" aria-label="Aura Deck game cartridge">
+<defs><linearGradient id="g-gaura-deck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a45"/><stop offset="1" stop-color="#ffd23f"/></linearGradient><clipPath id="c-gaura-deck"><rect x="42" y="58" width="156" height="150" rx="10"/></clipPath></defs>
+<path d="M20 44Q20 20 44 20H196Q220 20 220 44V250L196 272H44L20 250Z" fill="#1c2040"/>
+<path d="M20 44Q20 20 44 20H196Q220 20 220 44V52H20Z" fill="#242a54"/>
+<g stroke="#363d73" stroke-width="3" stroke-linecap="round"><line x1="58" y1="32" x2="182" y2="32"/><line x1="58" y1="40" x2="182" y2="40"/></g>
+<rect x="42" y="58" width="156" height="150" rx="10" fill="url(#g-gaura-deck)"/>
+<g clip-path="url(#c-gaura-deck)"><g fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3"><circle cx="120" cy="108" r="24"/><circle cx="120" cy="108" r="42"/><circle cx="120" cy="108" r="60"/></g><g transform="rotate(-18 120 108)"><rect x="70" y="98" width="100" height="20" rx="10" fill="#12152b"/><circle cx="92" cy="124" r="6" fill="#12152b"/><circle cx="148" cy="124" r="6" fill="#12152b"/></g><rect x="42" y="172" width="156" height="36" fill="#12152b" fill-opacity=".92"/></g>
+<text x="120" y="195" text-anchor="middle" fill="#fff" font-family="Unbounded,Arial Black,sans-serif" font-weight="700" font-size="13">Aura Deck</text>
+<rect x="42" y="222" width="156" height="14" rx="5" fill="#242a54"/><rect x="72" y="254" width="96" height="9" rx="3" fill="#0a0c1c"/>
+<g fill="#d9b13b"><rect x="80" y="256" width="5" height="5"/><rect x="92" y="256" width="5" height="5"/><rect x="104" y="256" width="5" height="5"/><rect x="116" y="256" width="5" height="5"/><rect x="128" y="256" width="5" height="5"/><rect x="140" y="256" width="5" height="5"/><rect x="152" y="256" width="5" height="5"/></g>
+</svg></div>
+  <div>
+    <h2>Aura Deck</h2>
+    <p>A skateboard clicker. Tap the board, land tricks and build up your aura.</p>
+    <ul aria-label="Works on"><li>Phone</li><li>PC</li><li>Free</li></ul>
+    <div class="actions"><button class="btn" type="button" data-url="https://radicus-boyer.github.io/aura-deck/" data-name="Aura Deck">Play Aura Deck</button><a class="btn ghost" href="https://radicus-boyer.github.io/aura-deck/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Aura Deck in a new tab)</span></a></div>
+  </div>
 </article>
-<article class="card" id="spark-gauntlet">
-  <span class="tag">Boss-rush bullet hell</span>
-  <h3>Spark Gauntlet</h3>
-  <p>Dodge, fire spells and use specials in a run of boss fights that get harder as you go. Pick your difficulty.</p>
-  <div class="actions"><button class="btn" type="button" data-game="spark-gauntlet" data-url="https://radicus-boyer.github.io/spark-gauntlet/" data-name="Spark Gauntlet">Play here</button>
-  <a class="btn alt" href="https://radicus-boyer.github.io/spark-gauntlet/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Spark Gauntlet in a new tab)</span></a></div>
+<article class="game" id="spark-gauntlet">
+  <div class="cartwrap" style="--r:3deg"><svg viewBox="0 0 240 290" role="img" aria-label="Spark Gauntlet game cartridge">
+<defs><linearGradient id="g-gspark-gauntlet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3bff"/><stop offset="1" stop-color="#ff4fa3"/></linearGradient><clipPath id="c-gspark-gauntlet"><rect x="42" y="58" width="156" height="150" rx="10"/></clipPath></defs>
+<path d="M20 44Q20 20 44 20H196Q220 20 220 44V250L196 272H44L20 250Z" fill="#1c2040"/>
+<path d="M20 44Q20 20 44 20H196Q220 20 220 44V52H20Z" fill="#242a54"/>
+<g stroke="#363d73" stroke-width="3" stroke-linecap="round"><line x1="58" y1="32" x2="182" y2="32"/><line x1="58" y1="40" x2="182" y2="40"/></g>
+<rect x="42" y="58" width="156" height="150" rx="10" fill="url(#g-gspark-gauntlet)"/>
+<g clip-path="url(#c-gspark-gauntlet)"><circle cx="172.0" cy="108.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="165.0" cy="134.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="146.0" cy="153.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="120.0" cy="160.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="94.0" cy="153.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="75.0" cy="134.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="68.0" cy="108.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="75.0" cy="82.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="94.0" cy="63.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="120.0" cy="56.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="146.0" cy="63.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="165.0" cy="82.0" r="4.5" fill="#fff" fill-opacity=".9"/><circle cx="190.6" cy="122.3" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="179.7" cy="148.2" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="159.8" cy="168.0" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="133.8" cy="178.7" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="105.7" cy="178.6" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="79.8" cy="167.7" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="60.0" cy="147.8" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="49.3" cy="121.8" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="49.4" cy="93.7" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="60.3" cy="67.8" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="80.2" cy="48.0" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="106.2" cy="37.3" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="134.3" cy="37.4" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="160.2" cy="48.3" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="180.0" cy="68.2" r="3.2" fill="#ffd23f" fill-opacity=".75"/><circle cx="190.7" cy="94.2" r="3.2" fill="#ffd23f" fill-opacity=".75"/><path d="M120 74l8 26 26 8-26 8-8 26-8-26-26-8 26-8z" fill="#ffd23f" stroke="#12152b" stroke-width="3" stroke-linejoin="round"/><rect x="42" y="172" width="156" height="36" fill="#12152b" fill-opacity=".92"/></g>
+<text x="120" y="195" text-anchor="middle" fill="#fff" font-family="Unbounded,Arial Black,sans-serif" font-weight="700" font-size="13">Spark Gauntlet</text>
+<rect x="42" y="222" width="156" height="14" rx="5" fill="#242a54"/><rect x="72" y="254" width="96" height="9" rx="3" fill="#0a0c1c"/>
+<g fill="#d9b13b"><rect x="80" y="256" width="5" height="5"/><rect x="92" y="256" width="5" height="5"/><rect x="104" y="256" width="5" height="5"/><rect x="116" y="256" width="5" height="5"/><rect x="128" y="256" width="5" height="5"/><rect x="140" y="256" width="5" height="5"/><rect x="152" y="256" width="5" height="5"/></g>
+</svg></div>
+  <div>
+    <h2>Spark Gauntlet</h2>
+    <p>A boss-rush bullet hell. Dodge attacks, cast spells and use specials in fights that get harder as you go. Pick the difficulty that suits you.</p>
+    <ul aria-label="Works on"><li>Phone</li><li>PC</li><li>Free</li></ul>
+    <div class="actions"><button class="btn" type="button" data-url="https://radicus-boyer.github.io/spark-gauntlet/" data-name="Spark Gauntlet">Play Spark Gauntlet</button><a class="btn ghost" href="https://radicus-boyer.github.io/spark-gauntlet/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Spark Gauntlet in a new tab)</span></a></div>
+  </div>
 </article>
-<article class="card" id="phase-runner">
-  <span class="tag">Rhythm-style runner</span>
-  <h3>Phase Runner</h3>
-  <p>Run, phase and jump through levels of rising difficulty. Includes a practice mode. Best on a phone held sideways or on a PC.</p>
-  <div class="actions"><button class="btn" type="button" data-game="phase-runner" data-url="https://radicus-boyer.github.io/phase-runner/" data-name="Phase Runner">Play here</button>
-  <a class="btn alt" href="https://radicus-boyer.github.io/phase-runner/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Phase Runner in a new tab)</span></a></div>
+<article class="game" id="phase-runner">
+  <div class="cartwrap" style="--r:-3deg"><svg viewBox="0 0 240 290" role="img" aria-label="Phase Runner game cartridge">
+<defs><linearGradient id="g-gphase-runner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10c9a0"/><stop offset="1" stop-color="#0d6e8a"/></linearGradient><clipPath id="c-gphase-runner"><rect x="42" y="58" width="156" height="150" rx="10"/></clipPath></defs>
+<path d="M20 44Q20 20 44 20H196Q220 20 220 44V250L196 272H44L20 250Z" fill="#1c2040"/>
+<path d="M20 44Q20 20 44 20H196Q220 20 220 44V52H20Z" fill="#242a54"/>
+<g stroke="#363d73" stroke-width="3" stroke-linecap="round"><line x1="58" y1="32" x2="182" y2="32"/><line x1="58" y1="40" x2="182" y2="40"/></g>
+<rect x="42" y="58" width="156" height="150" rx="10" fill="url(#g-gphase-runner)"/>
+<g clip-path="url(#c-gphase-runner)"><line x1="42" y1="146" x2="198" y2="146" stroke="#fff" stroke-width="4" stroke-linecap="round"/><g fill="#fff"><rect x="108" y="116" width="28" height="28" rx="4"/></g><g fill="#fff"><rect x="78" y="116" width="28" height="28" rx="4" fill-opacity=".45"/><rect x="48" y="116" width="28" height="28" rx="4" fill-opacity=".22"/></g><g fill="#12152b"><path d="M160 146l10-26 10 26z"/><path d="M178 146l10-18 10 18z" fill-opacity=".8"/></g><path d="M60 86h60M84 72h86" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/><rect x="42" y="172" width="156" height="36" fill="#12152b" fill-opacity=".92"/></g>
+<text x="120" y="195" text-anchor="middle" fill="#fff" font-family="Unbounded,Arial Black,sans-serif" font-weight="700" font-size="13">Phase Runner</text>
+<rect x="42" y="222" width="156" height="14" rx="5" fill="#242a54"/><rect x="72" y="254" width="96" height="9" rx="3" fill="#0a0c1c"/>
+<g fill="#d9b13b"><rect x="80" y="256" width="5" height="5"/><rect x="92" y="256" width="5" height="5"/><rect x="104" y="256" width="5" height="5"/><rect x="116" y="256" width="5" height="5"/><rect x="128" y="256" width="5" height="5"/><rect x="140" y="256" width="5" height="5"/><rect x="152" y="256" width="5" height="5"/></g>
+</svg></div>
+  <div>
+    <h2>Phase Runner</h2>
+    <p>A rhythm-style runner. Phase through levels of rising difficulty, with a practice mode to learn each one. Best on a phone held sideways or on a PC.</p>
+    <ul aria-label="Works on"><li>Phone</li><li>PC</li><li>Free</li></ul>
+    <div class="actions"><button class="btn" type="button" data-url="https://radicus-boyer.github.io/phase-runner/" data-name="Phase Runner">Play Phase Runner</button><a class="btn ghost" href="https://radicus-boyer.github.io/phase-runner/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Phase Runner in a new tab)</span></a></div>
+  </div>
 </article>
 
-</div>
-<section class="player" aria-live="polite">
-  <h2 id="now" style="border:0;padding:0;margin:0">Now playing</h2>
-  <p id="status">Choose a game above to start.</p>
-  <div id="frame-wrap"></div>
+<section class="screen" id="screen" aria-live="polite" aria-label="Game screen">
+  <div class="bar"><strong id="now">Game screen</strong><button type="button" id="close" hidden>Close game</button></div>
+  <div id="frame-wrap"><p class="empty">Pick a game above and press Play.</p></div>
 </section>
+</div>
 <script>
 (function(){
-  var wrap=document.getElementById('frame-wrap'),status=document.getElementById('status');
-  document.querySelectorAll('button[data-game]').forEach(function(b){
+  var wrap=document.getElementById('frame-wrap'),now=document.getElementById('now'),close=document.getElementById('close');
+  document.querySelectorAll('button[data-url]').forEach(function(b){
     b.addEventListener('click',function(){
       wrap.innerHTML='';
       var f=document.createElement('iframe');
       f.className='game';f.src=b.dataset.url;f.title='Play '+b.dataset.name;
-      f.setAttribute('allow','fullscreen; autoplay; gamepad');
-      f.setAttribute('allowfullscreen','');
+      f.setAttribute('allow','fullscreen; autoplay; gamepad');f.setAttribute('allowfullscreen','');
       f.setAttribute('sandbox','allow-scripts allow-same-origin allow-popups allow-pointer-lock allow-forms');
-      wrap.appendChild(f);
-      status.textContent='Playing '+b.dataset.name+'. Click inside the game to give it keyboard focus.';
-      document.getElementById('now').scrollIntoView();
+      wrap.appendChild(f);now.textContent='Now playing: '+b.dataset.name;close.hidden=false;
+      document.getElementById('screen').scrollIntoView({behavior:'smooth',block:'start'});
     });
   });
+  close.addEventListener('click',function(){wrap.innerHTML='<p class="empty">Pick a game above and press Play.</p>';now.textContent='Game screen';close.hidden=true;});
 })();
 </script>
 
 </main>
-<footer>
-  <p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="tiktok.html#data-deletion">Data deletion</a><a href="tiktok.html#cookies">Cookies</a><a href="tiktok.html#refunds">Refunds</a><a href="tiktok.html#accessibility">Accessibility</a></p>
-  <p>SparkCart · Ontario, Canada · <a href="mailto:contact@sparkcart.fyi">contact@sparkcart.fyi</a></p>
+<footer class="site-footer"><div class="wrap">
+  <ul class="links"><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="tiktok.html#data-deletion">Data deletion</a></li><li><a href="tiktok.html#cookies">Cookies</a></li><li><a href="tiktok.html#refunds">Refunds</a></li><li><a href="tiktok.html#accessibility">Accessibility</a></li></ul>
+  <p>SparkCart, Ontario, Canada. <a href="mailto:contact@sparkcart.fyi">contact@sparkcart.fyi</a></p>
   <p>&copy; 2026 SparkCart. All rights reserved. SparkCart is not affiliated with or endorsed by TikTok, YouTube or Roblox.</p>
-</footer>
+</div></footer>
 </body>
 </html>
