@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Games | SparkCart</title>
+<meta name="description" content="Play Aura Deck, Spark Gauntlet and Phase Runner free in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <a class="logo" href="index.html" aria-label="SparkCart home">Spark<span>Cart</span></a>
+  <nav aria-label="Main"><a href="index.html">Home</a><a href="games.html" aria-current="page">Games</a><a href="tiktok.html">TikTok App Info</a></nav>
+</header>
+<main id="main">
+
+<h1>Games</h1>
+<p class="lead">Free to play in your browser. Pick a game and press Play. If a game feels cramped, use Open in new tab for the full screen.</p>
+<div class="grid">
+<article class="card" id="aura-deck">
+  <span class="tag">Skateboard clicker</span>
+  <h3>Aura Deck</h3>
+  <p>Tap the board, pull off tricks and build up your aura. Has a touch-friendly phone version and a keyboard and fullscreen PC version.</p>
+  <div class="actions"><button class="btn" type="button" data-game="aura-deck" data-url="https://radicus-boyer.github.io/aura-deck/" data-name="Aura Deck">Play here</button>
+  <a class="btn alt" href="https://radicus-boyer.github.io/aura-deck/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Aura Deck in a new tab)</span></a></div>
+</article>
+<article class="card" id="spark-gauntlet">
+  <span class="tag">Boss-rush bullet hell</span>
+  <h3>Spark Gauntlet</h3>
+  <p>Dodge, fire spells and use specials in a run of boss fights that get harder as you go. Pick your difficulty.</p>
+  <div class="actions"><button class="btn" type="button" data-game="spark-gauntlet" data-url="https://radicus-boyer.github.io/spark-gauntlet/" data-name="Spark Gauntlet">Play here</button>
+  <a class="btn alt" href="https://radicus-boyer.github.io/spark-gauntlet/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Spark Gauntlet in a new tab)</span></a></div>
+</article>
+<article class="card" id="phase-runner">
+  <span class="tag">Rhythm-style runner</span>
+  <h3>Phase Runner</h3>
+  <p>Run, phase and jump through levels of rising difficulty. Includes a practice mode. Best on a phone held sideways or on a PC.</p>
+  <div class="actions"><button class="btn" type="button" data-game="phase-runner" data-url="https://radicus-boyer.github.io/phase-runner/" data-name="Phase Runner">Play here</button>
+  <a class="btn alt" href="https://radicus-boyer.github.io/phase-runner/" target="_blank" rel="noopener">Open in new tab<span class="sr"> (opens Phase Runner in a new tab)</span></a></div>
+</article>
+
+</div>
+<section class="player" aria-live="polite">
+  <h2 id="now" style="border:0;padding:0;margin:0">Now playing</h2>
+  <p id="status">Choose a game above to start.</p>
+  <div id="frame-wrap"></div>
+</section>
+<script>
+(function(){
+  var wrap=document.getElementById('frame-wrap'),status=document.getElementById('status');
+  document.querySelectorAll('button[data-game]').forEach(function(b){
+    b.addEventListener('click',function(){
+      wrap.innerHTML='';
+      var f=document.createElement('iframe');
+      f.className='game';f.src=b.dataset.url;f.title='Play '+b.dataset.name;
+      f.setAttribute('allow','fullscreen; autoplay; gamepad');
+      f.setAttribute('allowfullscreen','');
+      f.setAttribute('sandbox','allow-scripts allow-same-origin allow-popups allow-pointer-lock allow-forms');
+      wrap.appendChild(f);
+      status.textContent='Playing '+b.dataset.name+'. Click inside the game to give it keyboard focus.';
+      document.getElementById('now').scrollIntoView();
+    });
+  });
+})();
+</script>
+
+</main>
+<footer>
+  <p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="tiktok.html#data-deletion">Data deletion</a><a href="tiktok.html#cookies">Cookies</a><a href="tiktok.html#refunds">Refunds</a><a href="tiktok.html#accessibility">Accessibility</a></p>
+  <p>SparkCart · Ontario, Canada · <a href="mailto:contact@sparkcart.fyi">contact@sparkcart.fyi</a></p>
+  <p>&copy; 2026 SparkCart. All rights reserved. SparkCart is not affiliated with or endorsed by TikTok, YouTube or Roblox.</p>
+</footer>
+</body>
+</html>
